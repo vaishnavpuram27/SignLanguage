@@ -14,5 +14,5 @@ canny_array = np.array(canny)
 canny_flat = canny_array.flatten()
 print(canny_flat.shape)
 
-mo = joblib.load('logi_reg_model_blur')
+mo = joblib.load('svm_model_blur')
 print(mo.predict([canny_flat]))
